@@ -19,6 +19,8 @@
 		0F1063DD2B6AF469002863C4 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063DC2B6AF469002863C4 /* RocketReserverAPI */; };
 		0F1063DF2B6AF567002863C4 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1063DE2B6AF567002863C4 /* Network.swift */; };
 		0F1063E12B6AF603002863C4 /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1063E02B6AF603002863C4 /* LaunchListViewModel.swift */; };
+		0F1063E32B6AFB92002863C4 /* View+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1063E22B6AFB92002863C4 /* View+Alert.swift */; };
+		0F1063EA2B6AFE1A002863C4 /* LaunchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1063E92B6AFE1A002863C4 /* LaunchRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0F1063D92B6AF360002863C4 /* graphql */ = {isa = PBXFileReference; lastKnownFileType = folder; path = graphql; sourceTree = "<group>"; };
 		0F1063DE2B6AF567002863C4 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0F1063E02B6AF603002863C4 /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
+		0F1063E22B6AFB92002863C4 /* View+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Alert.swift"; sourceTree = "<group>"; };
+		0F1063E92B6AFE1A002863C4 /* LaunchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +73,11 @@
 			isa = PBXGroup;
 			children = (
 				0F1063C02B6AC5C1002863C4 /* RocketReserver_ApolloGraphQLApp.swift */,
-				0F1063C22B6AC5C1002863C4 /* ContentView.swift */,
+				0F1063E82B6AFD04002863C4 /* Model */,
+				0F1063E72B6AFCDB002863C4 /* ViewModel */,
+				0F1063E62B6AFCC0002863C4 /* View */,
 				0F1063C42B6AC5C2002863C4 /* Assets.xcassets */,
 				0F1063C62B6AC5C3002863C4 /* Preview Content */,
-				0F1063DE2B6AF567002863C4 /* Network.swift */,
-				0F1063E02B6AF603002863C4 /* LaunchListViewModel.swift */,
 			);
 			path = "RocketReserver-ApolloGraphQL";
 			sourceTree = "<group>";
@@ -84,6 +88,32 @@
 				0F1063C72B6AC5C3002863C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0F1063E62B6AFCC0002863C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F1063C22B6AC5C1002863C4 /* ContentView.swift */,
+				0F1063E22B6AFB92002863C4 /* View+Alert.swift */,
+				0F1063E92B6AFE1A002863C4 /* LaunchRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F1063E72B6AFCDB002863C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F1063E02B6AF603002863C4 /* LaunchListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0F1063E82B6AFD04002863C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F1063DE2B6AF567002863C4 /* Network.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +201,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F1063C32B6AC5C1002863C4 /* ContentView.swift in Sources */,
+				0F1063EA2B6AFE1A002863C4 /* LaunchRow.swift in Sources */,
 				0F1063C12B6AC5C1002863C4 /* RocketReserver_ApolloGraphQLApp.swift in Sources */,
 				0F1063DF2B6AF567002863C4 /* Network.swift in Sources */,
 				0F1063E12B6AF603002863C4 /* LaunchListViewModel.swift in Sources */,
+				0F1063E32B6AFB92002863C4 /* View+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
