@@ -15,6 +15,7 @@
 		0F1063D32B6AC638002863C4 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063D22B6AC638002863C4 /* KeychainSwift */; };
 		0F1063D62B6AC744002863C4 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063D52B6AC744002863C4 /* Apollo */; };
 		0F1063D82B6AC744002863C4 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063D72B6AC744002863C4 /* ApolloWebSocket */; };
+		0F1063DA2B6AF360002863C4 /* graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0F1063D92B6AF360002863C4 /* graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		0F1063C22B6AC5C1002863C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0F1063C42B6AC5C2002863C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F1063C72B6AC5C3002863C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0F1063D92B6AF360002863C4 /* graphql */ = {isa = PBXFileReference; lastKnownFileType = folder; path = graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		0F1063B42B6AC5C1002863C4 = {
 			isa = PBXGroup;
 			children = (
+				0F1063D92B6AF360002863C4 /* graphql */,
 				0F1063BF2B6AC5C1002863C4 /* RocketReserver-ApolloGraphQL */,
 				0F1063BE2B6AC5C1002863C4 /* Products */,
 			);
@@ -144,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1063DA2B6AF360002863C4 /* graphql in Resources */,
 				0F1063C82B6AC5C3002863C4 /* Preview Assets.xcassets in Resources */,
 				0F1063C52B6AC5C2002863C4 /* Assets.xcassets in Resources */,
 			);
