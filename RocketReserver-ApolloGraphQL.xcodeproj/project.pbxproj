@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		0F1063D62B6AC744002863C4 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063D52B6AC744002863C4 /* Apollo */; };
 		0F1063D82B6AC744002863C4 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063D72B6AC744002863C4 /* ApolloWebSocket */; };
 		0F1063DA2B6AF360002863C4 /* graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0F1063D92B6AF360002863C4 /* graphql */; };
+		0F1063DD2B6AF469002863C4 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063DC2B6AF469002863C4 /* RocketReserverAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1063DD2B6AF469002863C4 /* RocketReserverAPI in Frameworks */,
 				0F1063D32B6AC638002863C4 /* KeychainSwift in Frameworks */,
 				0F1063D82B6AC744002863C4 /* ApolloWebSocket in Frameworks */,
 				0F1063D62B6AC744002863C4 /* Apollo in Frameworks */,
@@ -99,6 +101,7 @@
 				0F1063D22B6AC638002863C4 /* KeychainSwift */,
 				0F1063D52B6AC744002863C4 /* Apollo */,
 				0F1063D72B6AC744002863C4 /* ApolloWebSocket */,
+				0F1063DC2B6AF469002863C4 /* RocketReserverAPI */,
 			);
 			productName = "RocketReserver-ApolloGraphQL";
 			productReference = 0F1063BD2B6AC5C1002863C4 /* RocketReserver-ApolloGraphQL.app */;
@@ -132,6 +135,7 @@
 				0F1063CE2B6AC616002863C4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				0F1063D12B6AC638002863C4 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				0F1063D42B6AC744002863C4 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				0F1063DB2B6AF469002863C4 /* XCLocalSwiftPackageReference "RocketReserverAPI" */,
 			);
 			productRefGroup = 0F1063BE2B6AC5C1002863C4 /* Products */;
 			projectDirPath = "";
@@ -368,6 +372,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		0F1063DB2B6AF469002863C4 /* XCLocalSwiftPackageReference "RocketReserverAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = RocketReserverAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		0F1063CE2B6AC616002863C4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -415,6 +426,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0F1063D42B6AC744002863C4 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
+		};
+		0F1063DC2B6AF469002863C4 /* RocketReserverAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RocketReserverAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
