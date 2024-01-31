@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "apollo-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apollographql/apollo-ios.git",
+      "state" : {
+        "revision" : "ff54632b8740ecfb858bae4630d822e615c7ef1c",
+        "version" : "1.8.0"
+      }
+    },
+    {
       "identity" : "keychain-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/evgenyneu/keychain-swift.git",
@@ -25,6 +34,15 @@
       "state" : {
         "revision" : "261b6cec35686d2dc192b809ab50742b4502a73b",
         "version" : "2.2.6"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift.git",
+      "state" : {
+        "revision" : "7a2e3cd27de56f6d396e84f63beefd0267b55ccb",
+        "version" : "0.14.1"
       }
     }
   ],
