@@ -4,6 +4,7 @@
 //
 //  Created by Negin Zahedi on 2024-01-31.
 //
+// Note: generate command ./apollo-ios-cli generate
 
 import Foundation
 import Apollo

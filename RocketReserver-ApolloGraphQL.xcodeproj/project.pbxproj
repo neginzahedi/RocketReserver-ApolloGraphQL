@@ -24,6 +24,10 @@
 		0F1063EC2B6B01DC002863C4 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F1063EB2B6B01DC002863C4 /* RocketReserverAPI */; };
 		0F50E0262B756E7C0097A379 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50E0252B756E7C0097A379 /* RocketReserverAPI */; };
 		0F50E0282B756E8E0097A379 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50E0272B756E8E0097A379 /* RocketReserverAPI */; };
+		0F50E02A2B75850E0097A379 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F50E0292B75850E0097A379 /* DetailView.swift */; };
+		0F50E02C2B75879D0097A379 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F50E02B2B75879D0097A379 /* DetailViewModel.swift */; };
+		0F50E02E2B7588700097A379 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50E02D2B7588700097A379 /* RocketReserverAPI */; };
+		0F50E0302B75887B0097A379 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50E02F2B75887B0097A379 /* RocketReserverAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,8 @@
 		0F1063E02B6AF603002863C4 /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
 		0F1063E22B6AFB92002863C4 /* View+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Alert.swift"; sourceTree = "<group>"; };
 		0F1063E92B6AFE1A002863C4 /* LaunchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRow.swift; sourceTree = "<group>"; };
+		0F50E0292B75850E0097A379 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0F50E02B2B75879D0097A379 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +53,9 @@
 				0F1063DD2B6AF469002863C4 /* RocketReserverAPI in Frameworks */,
 				0F50E0282B756E8E0097A379 /* RocketReserverAPI in Frameworks */,
 				0F1063D32B6AC638002863C4 /* KeychainSwift in Frameworks */,
+				0F50E02E2B7588700097A379 /* RocketReserverAPI in Frameworks */,
 				0F1063D82B6AC744002863C4 /* ApolloWebSocket in Frameworks */,
+				0F50E0302B75887B0097A379 /* RocketReserverAPI in Frameworks */,
 				0F50E0262B756E7C0097A379 /* RocketReserverAPI in Frameworks */,
 				0F1063EC2B6B01DC002863C4 /* RocketReserverAPI in Frameworks */,
 				0F1063D62B6AC744002863C4 /* Apollo in Frameworks */,
@@ -102,6 +110,7 @@
 				0F1063C22B6AC5C1002863C4 /* ContentView.swift */,
 				0F1063E22B6AFB92002863C4 /* View+Alert.swift */,
 				0F1063E92B6AFE1A002863C4 /* LaunchRow.swift */,
+				0F50E0292B75850E0097A379 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				0F1063E02B6AF603002863C4 /* LaunchListViewModel.swift */,
+				0F50E02B2B75879D0097A379 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -147,6 +157,8 @@
 				0F1063EB2B6B01DC002863C4 /* RocketReserverAPI */,
 				0F50E0252B756E7C0097A379 /* RocketReserverAPI */,
 				0F50E0272B756E8E0097A379 /* RocketReserverAPI */,
+				0F50E02D2B7588700097A379 /* RocketReserverAPI */,
+				0F50E02F2B75887B0097A379 /* RocketReserverAPI */,
 			);
 			productName = "RocketReserver-ApolloGraphQL";
 			productReference = 0F1063BD2B6AC5C1002863C4 /* RocketReserver-ApolloGraphQL.app */;
@@ -212,9 +224,11 @@
 				0F1063C32B6AC5C1002863C4 /* ContentView.swift in Sources */,
 				0F1063EA2B6AFE1A002863C4 /* LaunchRow.swift in Sources */,
 				0F1063C12B6AC5C1002863C4 /* RocketReserver_ApolloGraphQLApp.swift in Sources */,
+				0F50E02A2B75850E0097A379 /* DetailView.swift in Sources */,
 				0F1063DF2B6AF567002863C4 /* Network.swift in Sources */,
 				0F1063E12B6AF603002863C4 /* LaunchListViewModel.swift in Sources */,
 				0F1063E32B6AFB92002863C4 /* View+Alert.swift in Sources */,
+				0F50E02C2B75879D0097A379 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +503,14 @@
 			productName = RocketReserverAPI;
 		};
 		0F50E0272B756E8E0097A379 /* RocketReserverAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RocketReserverAPI;
+		};
+		0F50E02D2B7588700097A379 /* RocketReserverAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RocketReserverAPI;
+		};
+		0F50E02F2B75887B0097A379 /* RocketReserverAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RocketReserverAPI;
 		};
