@@ -18,9 +18,18 @@ struct ContentView: View {
                 ForEach(0..<viewModel.launches.count, id: \.self) { index in
                     LaunchRow(launch: viewModel.launches[index])
                 }
+                if viewModel.lastConnection?.hasMore != false {
+                    if viewModel.activeRequest == nil{
+                        Button(action: viewModel.loadMoreLaunchesIfTheyExist){
+                            Text("tap to load more")
+                        }
+                    } else {
+                        Text("Loading...")
+                    }
+                }
             }
             .task { // query the server for data
-                viewModel.loadMoreLaunches()
+                viewModel.loadMoreLaunchesIfTheyExist()
             }
             .navigationTitle("Rocket launches")
             .appAlert($viewModel.appAlert)
