@@ -7,6 +7,7 @@
 
 import Foundation
 import RocketReserverAPI
+import KeychainSwift
 
 class DetailViewModel: ObservableObject {
     
@@ -14,6 +15,7 @@ class DetailViewModel: ObservableObject {
     
     @Published var launch: LaunchDetailsQuery.Data.Launch?
     @Published var appAlert: AppAlert?
+    @Published var isShowingLogin = false
     
     init(launchID: RocketReserverAPI.ID) {
         self.launchID = launchID
@@ -42,5 +44,20 @@ class DetailViewModel: ObservableObject {
                 self.appAlert = .errors(errors: [error])
             }
         }
+    }
+    
+    func bookOrCancel() {
+        print(isShowingLogin)
+        
+        guard self.isLoggedIn() else {
+            isShowingLogin = true
+            return
+        }
+        // TODO
+    }
+    
+    private func isLoggedIn() -> Bool {
+        let keychain = KeychainSwift()
+        return keychain.get(LoginView.loginKeychainKey) != nil
     }
 }

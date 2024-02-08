@@ -63,7 +63,14 @@ struct DetailView: View {
                         }
                     }
                 }
+                if launch.isBooked {
+                    cancelTripButton()
+                } else {
+                    bookTripButton()
+                }
             }
+            
+            
             Spacer()
         }
         .padding(10)
@@ -72,7 +79,30 @@ struct DetailView: View {
         .task {
             viewModel.loadLaunchDetails()
         }
+        .sheet(isPresented: $viewModel.isShowingLogin) {
+            LoginView(isPresented: $viewModel.isShowingLogin)
+        }
         .appAlert($viewModel.appAlert)
+    }
+    
+    private func bookTripButton() -> some View {
+        Button(action: viewModel.bookOrCancel) {
+            Text("Book now!")
+                .foregroundColor(.black)
+        }
+        .frame(width: 200, height: 50)
+        .background(.green)
+        .cornerRadius(8)
+    }
+    
+    private func cancelTripButton() -> some View {
+        Button(action: viewModel.bookOrCancel) {
+            Text("Cancel trip")
+                .foregroundColor(.black)
+        }
+        .frame(width: 200, height: 50)
+        .background(.red)
+        .cornerRadius(8)
     }
 }
 
