@@ -13,7 +13,7 @@ In this tutorial, I learned how to:
 - Authenticate with a backend server
 - Use subscriptions to receive real-time updates
 
-For detailed instructions, refer to the [Apollo iOS SDK Tutorial](<[link to tutorial](https://www.apollographql.com/docs/ios/tutorial/codegen-getting-started)>) on the Apollo documentation website.
+For detailed instructions, refer to the [Apollo iOS SDK Tutorial](<https://www.apollographql.com/docs/ios/tutorial/codegen-getting-started>) on the Apollo documentation website.
 
 ## Disclaimer
 Please note that the majority of the code in this project is derived from the Apollo tutorial documentation. I utilized the tutorial as a learning resource to understand and implement GraphQL integration using the Apollo iOS SDK. The purpose of this project is educational, and the code is not original to me. 
