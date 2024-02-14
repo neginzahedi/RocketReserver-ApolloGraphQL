@@ -15,6 +15,9 @@ class LaunchListViewModel: ObservableObject {
     @Published var lastConnection: LaunchListQuery.Data.Launches? // most recently received LaunchConnection object
     @Published var activeRequest: Cancellable?  // most recent request
     @Published var appAlert: AppAlert?
+    var activeSubscription: Cancellable?
+    @Published var notificationMessage: String?
+    
     
     init() {
         // Test query to check communication with server
@@ -29,8 +32,7 @@ class LaunchListViewModel: ObservableObject {
          }
          */
         
-        // TODO (Section 13 - https://www.apollographql.com/docs/ios/tutorial/tutorial-subscriptions#use-your-subscription)
-        
+        startSubscription()
     }
     
     // check if there are any launches to load before attempting to load them
@@ -70,5 +72,42 @@ class LaunchListViewModel: ObservableObject {
                 self.appAlert = .errors(errors: [error])
             }
         }
+    }
+    
+    func startSubscription() {
+        activeSubscription = Network.shared.apollo.subscribe(subscription: TripsBookedSubscription()) { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            
+            switch result {
+            case .success(let graphQLResult):
+                if let tripsBooked = graphQLResult.data?.tripsBooked {
+                    self.handleTripsBooked(value: tripsBooked)
+                }
+                
+                if let errors = graphQLResult.errors {
+                    self.appAlert = .errors(errors: errors)
+                }
+            case .failure(let error):
+                self.appAlert = .errors(errors: [error])
+            }
+        }
+    }
+    
+    private func handleTripsBooked(value: Int) {
+        var message: String
+        switch value {
+        case 1:
+            message = "A new trip was booked! 🚀"
+        case -1:
+            message = "A trip was cancelled! 😭"
+        default:
+            appAlert = .basic(title: "Unexpected Value",
+                              message: "Subscription returned an unexpected value: \(value)")
+            return
+        }
+        
+        notificationMessage = message
     }
 }

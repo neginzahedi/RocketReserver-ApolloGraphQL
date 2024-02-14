@@ -36,6 +36,7 @@ struct ContentView: View {
             .navigationTitle("Rocket launches")
             .appAlert($viewModel.appAlert)
         }
+        .notificationView(message: $viewModel.notificationMessage)
     }
 }
 
