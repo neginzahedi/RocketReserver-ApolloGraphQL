@@ -2,6 +2,9 @@
 
 This application serves as an implementation of the tutorial provided by Apollo for working with the Apollo iOS SDK to communicate with a GraphQL server.
 
+![](https://github.com/neginzahedi/RocketReserver-ApolloGraphQL/blob/main/apollo.gif)
+
+
 ## Tutorial Overview
 In this tutorial, I learned how to:
 
