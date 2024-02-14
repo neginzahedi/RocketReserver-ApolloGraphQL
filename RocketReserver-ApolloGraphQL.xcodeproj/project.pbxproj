@@ -30,6 +30,8 @@
 		0F50E0302B75887B0097A379 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F50E02F2B75887B0097A379 /* RocketReserverAPI */; };
 		0F50E0322B7590600097A379 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F50E0312B7590600097A379 /* LoginViewModel.swift */; };
 		0F50E0342B7591010097A379 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F50E0332B7591010097A379 /* LoginView.swift */; };
+		0FE46E662B7D466500B23276 /* AuthorizationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE46E652B7D466500B23276 /* AuthorizationInterceptor.swift */; };
+		0FE46E682B7D46BB00B23276 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE46E672B7D46BB00B23276 /* NetworkInterceptorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		0F50E02B2B75879D0097A379 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		0F50E0312B7590600097A379 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0F50E0332B7591010097A379 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0FE46E652B7D466500B23276 /* AuthorizationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInterceptor.swift; sourceTree = "<group>"; };
+		0FE46E672B7D46BB00B23276 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 		0F1063E82B6AFD04002863C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0FE46E672B7D46BB00B23276 /* NetworkInterceptorProvider.swift */,
+				0FE46E652B7D466500B23276 /* AuthorizationInterceptor.swift */,
 				0F1063DE2B6AF567002863C4 /* Network.swift */,
 			);
 			path = Model;
@@ -227,11 +233,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE46E662B7D466500B23276 /* AuthorizationInterceptor.swift in Sources */,
 				0F1063C32B6AC5C1002863C4 /* ContentView.swift in Sources */,
 				0F1063EA2B6AFE1A002863C4 /* LaunchRow.swift in Sources */,
 				0F1063C12B6AC5C1002863C4 /* RocketReserver_ApolloGraphQLApp.swift in Sources */,
 				0F50E02A2B75850E0097A379 /* DetailView.swift in Sources */,
 				0F1063DF2B6AF567002863C4 /* Network.swift in Sources */,
+				0FE46E682B7D46BB00B23276 /* NetworkInterceptorProvider.swift in Sources */,
 				0F1063E12B6AF603002863C4 /* LaunchListViewModel.swift in Sources */,
 				0F1063E32B6AFB92002863C4 /* View+Alert.swift in Sources */,
 				0F50E02C2B75879D0097A379 /* DetailViewModel.swift in Sources */,
